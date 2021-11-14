@@ -14,10 +14,13 @@ int matrixInput() {
 }
 
 int isTherePath(int i, int j) {
+  if (shortest(i, j) != -1) {
+    return true;
+  }
   return false;
 }
 
 int shortest(int i, int j) {
-  printf("hey hey\n");
-  return 0;
+  /*do all the calculations and return the size of the shortest path*/
+  return -1;
 }
