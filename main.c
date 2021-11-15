@@ -14,9 +14,9 @@ int main() {
       case 'B':
         scanf("%d%d", &i, &j);
         if (isTherePath(i, j) == true) {
-          printf("true\n");
+          printf("True\n");
         } else {
-          printf("false\n");
+          printf("False\n");
         }
         break;
       case 'C':
