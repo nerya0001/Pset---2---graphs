@@ -2,7 +2,7 @@
 #include "my_mat.h"
 #include <stdbool.h>
 #include <math.h>
-#include <limits.h>
+
 
 int matrix[10][10];
 int tmpMatrix[10][10];
@@ -17,7 +17,7 @@ int matrixInput() {
 }
 
 int isTherePath(int i, int j) {
-  if (shortest(i, j) != INT_MAX) {
+  if (shortest(i, j) != -1) {
     return true;
   }
   return false;
@@ -25,10 +25,10 @@ int isTherePath(int i, int j) {
 
 int shortest(int i, int j) {
   /*do all the calculations and return the size of the shortest path*/
-  //initializing tmp matrix to infinity
+  //initializing tmp matrix to 0
   for (int i = 0; i < 10; i++) {
     for (int j = 0; j < 10; j++) {
-      tmpMatrix[i][j] = INT_MAX;
+      tmpMatrix[i][j] = 0;
     }
   }
 
@@ -49,5 +49,9 @@ int shortest(int i, int j) {
       }
     }
   }
-  return tmpMatrix[i][j];
+  if (tmpMatrix[i][j] == 0) {
+    return -1;
+  } else {
+    return tmpMatrix[i][j];
+  }
 }

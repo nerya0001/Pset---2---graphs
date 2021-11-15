@@ -4,7 +4,7 @@
 
 int main() {
   char action;
-  int i, j;
+  int i, j, path;
   do {
     scanf("%c", &action);
     switch (action) {
@@ -21,7 +21,8 @@ int main() {
         break;
       case 'C':
         scanf("%d%d", &i, &j);
-        shortest(i, j);
+        path = shortest(i, j);
+        printf("%d\n", path);
         break;
     }
   } while (action != 'D');
