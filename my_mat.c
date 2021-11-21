@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "my_mat.h"
 #include <stdbool.h>
-#include <math.h>
 
 
 int matrix[10][10];
@@ -39,7 +38,17 @@ int shortest(int i, int j) {
     }
   }
 
-  //the algorithm itself
+  for (int j = 0; j < 10; j++) {
+    tmpMatrix[i][i] = 0;
+  }
+  // printf("\n");
+  // for (int i = 0; i < 10; i++) {
+  //   for (int j = 0; j < 10; j++) {
+  //     printf("%d ", tmpMatrix[i][j]);
+  //   }
+  //   printf("\n");
+  // }
+
   for (int k = 0; k < 10; k++) {
     for (int i = 0; i < 10; i++) {
       for (int j = 0; j < 10; j++) {
@@ -49,6 +58,7 @@ int shortest(int i, int j) {
       }
     }
   }
+
   if (tmpMatrix[i][j] == 0) {
     return -1;
   } else {
