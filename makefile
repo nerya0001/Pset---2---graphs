@@ -1,6 +1,6 @@
 CC=gcc
 AR=ar
-FLAGS= -Wall -g
+FLAGS=-Wall -g
 
 all: libmine.a connections
 
