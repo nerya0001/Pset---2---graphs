@@ -2,7 +2,7 @@ CC=gcc
 AR=ar
 FLAGS=-Wall -g
 
-all: libmine.a connections
+all: connections
 
 libmine.a: my_mat.o
 	$(AR) -rcs libmine.a my_mat.o
