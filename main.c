@@ -5,8 +5,8 @@
 int main() {
   char action;
   int i, j, path;
-  do {
-    scanf("%c", &action);
+  scanf("%c", &action);
+  while (action != 'D') {
     switch (action) {
       case 'A':
         matrixInput();
@@ -25,6 +25,6 @@ int main() {
         printf("%d\n", path);
         break;
     }
-  } while (action != 'D');
+  }
   return 0;
 }
