@@ -62,16 +62,16 @@ int shortest(int i, int j) {
   for (int i = 0; i < 10; i++) {
     tmpMatrix[i][i] = 0;
   }
-  
-  printf("\n");
-  for(int i = 0; i < 10; i++) {
-    printf("|");
-    for(int j = 0; j < 10; j++) {
-      printf(" %d ", tmpMatrix[i][j]);
-    }
-    printf("|\n");
-  }
-  printf("\n");
+
+  // printf("\n");
+  // for(int i = 0; i < 10; i++) {
+  //   printf("|");
+  //   for(int j = 0; j < 10; j++) {
+  //     printf(" %d ", tmpMatrix[i][j]);
+  //   }
+  //   printf("|\n");
+  // }
+  // printf("\n");
   if (tmpMatrix[i][j] == 0) {
     return -1;
   } else {
