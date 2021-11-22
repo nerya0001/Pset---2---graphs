@@ -37,7 +37,7 @@ int shortest(int i, int j) {
     for (int i = 0; i < 10; i++) {
       for (int j = 0; j < 10; j++) {
         if (tmpMatrix[i][k] != 0 && tmpMatrix[k][j] != 0) {
-          if (tmpMatrix[i][j] > tmpMatrix[i][k] + tmpMatrix[k][j]) {
+          if (tmpMatrix[i][j] > tmpMatrix[i][k] + tmpMatrix[k][j] && tmpMatrix[i][j] != 0) {
             tmpMatrix[i][j] = tmpMatrix[i][k] + tmpMatrix[k][j];
           }
         }
