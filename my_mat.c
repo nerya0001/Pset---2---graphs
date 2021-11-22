@@ -1,5 +1,5 @@
 #include <stdio.h>
-// #include "my_mat.h"
+#include "my_mat.h"
 #include <stdbool.h>
 
 
@@ -26,30 +26,12 @@ int isTherePath(int i, int j) {
 
 int shortest(int i, int j) {
   /*do all the calculations and return the size of the shortest path*/
-  //initializing tmp matrix to 0
-  for (int i = 0; i < 10; i++) {
-    for (int j = 0; j < 10; j++) {
-      tmpMatrix[i][j] = 0;
-    }
-  }
-
-  //copying tha values from the matrix
   for (int i = 0; i < 10; i++) {
     for (int j = 0; j < 10; j++) {
       tmpMatrix[i][j] = matrix[i][j];
     }
   }
 
-  for (int j = 0; j < 10; j++) {
-    tmpMatrix[i][i] = 0;
-  }
-  // printf("\n");
-  // for (int i = 0; i < 10; i++) {
-  //   for (int j = 0; j < 10; j++) {
-  //     printf("%d ", tmpMatrix[i][j]);
-  //   }
-  //   printf("\n");
-  // }
 
   for (int k = 0; k < 10; k++) {
     for (int i = 0; i < 10; i++) {

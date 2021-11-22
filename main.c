@@ -12,7 +12,7 @@ int main() {
         matrixInput();
         break;
       case 'B':
-        scanf("%d%d", &i, &j);
+        scanf(" %d %d", &i, &j);
         if (isTherePath(i, j) == true) {
           printf("True\n");
         } else {
@@ -20,7 +20,7 @@ int main() {
         }
         break;
       case 'C':
-        scanf("%d%d", &i, &j);
+        scanf(" %d %d", &i, &j);
         path = shortest(i, j);
         printf("%d\n", path);
         break;
