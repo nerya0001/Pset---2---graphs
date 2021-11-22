@@ -15,15 +15,15 @@ int matrixInput() {
     }
   }
 
-  printf("\n");
-  for(int i = 0; i < 10; i++) {
-    printf("|");
-    for(int j = 0; j < 10; j++) {
-      printf(" %d ", matrix[i][j]);
-    }
-    printf("|\n");
-  }
-  printf("\n");
+  // printf("\n");
+  // for(int i = 0; i < 10; i++) {
+  //   printf("|");
+  //   for(int j = 0; j < 10; j++) {
+  //     printf(" %d ", matrix[i][j]);
+  //   }
+  //   printf("|\n");
+  // }
+  // printf("\n");
   return 0;
 }
 
